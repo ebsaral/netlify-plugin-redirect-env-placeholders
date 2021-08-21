@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-redirect-env-placeholders",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Netlify plugin to dynamically replace environment variables defined in _redirects file",
   "main": "src/index",
   "repository": "https://github.com/ebsaral/netlify-plugin-redirect-env-placeholders",
