@@ -18,7 +18,8 @@
     "placeholders"
   ],
   "scripts": {
-    "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md",    
+    "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md",
+    "addTag": "git push && git push --tags && gh-release",
     "test": "jest"
   },
   "dependencies": {},
