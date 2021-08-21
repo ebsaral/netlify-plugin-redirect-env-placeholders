@@ -48,3 +48,6 @@ Both inputs are optional:
 | -------- | ------------------------------------------------------------------- | ------------ |
 | `base`   | Base path of the build during preBuild step where files exist       | `/opt/build/repo/` |
 
+### Note
+
+If you would like to use this plugin with [netlify-plugin-contextual-env](https://github.com/cball/netlify-plugin-contextual-env), please make sure that this plugin is added afterwards.
