@@ -1,0 +1,3 @@
+/api/auth/* http://default-domain/api/auth/:splat 200
+/api/checkout/* https://this.is.test/hey/:splat 200
+/api/self-service/* https://this.is.test/hey/:splat 200

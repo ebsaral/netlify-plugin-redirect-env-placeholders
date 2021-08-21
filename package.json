@@ -1,0 +1,31 @@
+{
+  "name": "netlify-plugin-redirect-env-placeholders",
+  "version": "0.0.0",
+  "description": "A Netlify plugin to dynamically replace environment variables defined in _redirects file",
+  "main": "src/index",
+  "repository": "https://github.com/ebsaral/netlify-plugin-redirect-env-placeholders",
+  "bugs": {
+    "url": "https://github.com/ebsaral/netlify-plugin-redirect-env-placeholders"
+  },
+  "author": "Emin Bugra Saral",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "netlify",
+    "netlify-plugin",
+    "env",
+    "placeholder",
+    "placeholders"
+  ],
+  "scripts": {
+    "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md",
+    "prepublishOnly": "git push && git push --tags && gh-release",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "auto-changelog": "^2.3.0",
+    "gh-release": "^6.0.0",
+    "jest": "^27.0.6"
+  }
+}
