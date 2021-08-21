@@ -33,7 +33,7 @@ With this plugin, your published `_redirects` will be transformed to:
 
 ```toml
 [[plugins]]
-package = "/plugins/netlify-plugin-redirect-env-placeholders"
+package = "netlify-plugin-redirect-env-placeholders"
   [plugins.inputs]
   source = '_redirects'
   base = '/opt/build/repo/'
