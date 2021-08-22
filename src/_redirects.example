@@ -1,3 +1,4 @@
 /api/auth/* {{env:ENV_NON_EXISTENT|http://default-domain}}/api/auth/:splat 200
 /api/checkout/* {{env:TEST_API_URL}}/:splat 200
-/api/self-service/* {{env:TEST_API_URL}}/:splat 200
+/api/payment/* {{env:TEST_API_URL|http://another-domain.com}}/:splat 200
+/api/self-service/* {{env:ANOTHER_TEST_API_URL|http:/default-domain}}/:splat 200

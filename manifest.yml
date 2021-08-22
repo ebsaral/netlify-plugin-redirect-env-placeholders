@@ -5,4 +5,4 @@ inputs:
     default: _redirects
   - name: base
     description: Base path to look for _redirects file
-    default: /opt/build/repo/
+    default: .

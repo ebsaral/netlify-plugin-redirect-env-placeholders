@@ -18,7 +18,7 @@ module.exports = {
     try {
       data = await fs.readFileSync(SOURCE_PATH, 'utf8');
     } catch (error) {
-        console.log(error)
+      console.log(error);
       return utils.build.failBuild(`Source file is not found: ${SOURCE_PATH}`);
     }
 
@@ -29,15 +29,10 @@ module.exports = {
     for (let match of matches) {
       const nameValue = match[1];
       const defaultValue = match[2];
-      const placeholder = defaultValue
-        ? `${nameValue}|${defaultValue}`
-        : nameValue;
+      const placeholder = defaultValue ? `${nameValue}\|${defaultValue}` : nameValue;
       const value = process.env[nameValue] || defaultValue;
-      var regex = new RegExp(`{{env:${placeholder}}}`, 'g');
-      data = data.replace(regex, value);
-      console.log(
-        `Replacing _redirects placeholder ${placeholder} with ${value}`
-      );
+      data = data.replace(`{{env:${placeholder}}}`, value);
+      console.log(`Replacing _redirects placeholder ${placeholder} with ${value}`);
     }
 
     // Create empty file if target doesn't exist
@@ -49,5 +44,5 @@ module.exports = {
 
     // Write to target file
     await fs.writeFileSync(TARGET_PATH, data);
-  }
+  },
 };

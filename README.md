@@ -1,6 +1,6 @@
 # netlify-plugin-redirect-env-placeholders
 
-This plugin replaces the placeholders defined in `_redirects` file dynamically on preBuild stage. 
+This plugin replaces the placeholders defined in `_redirects` file dynamically on preBuild stage.
 
 # What it does
 
@@ -42,11 +42,10 @@ package = "netlify-plugin-redirect-env-placeholders"
 
 Both inputs are optional:
 
-| name     | description                                                         | default      |
-| -------- | ------------------------------------------------------------------- | ------------ |
-| `source` | Source filename (It should be on the root path of your project)     | `_redirects` |
-| -------- | ------------------------------------------------------------------- | ------------ |
-| `base`   | Base path of the build during preBuild step where files exist       | `/opt/build/repo/` |
+| name     | description                                                     | default      |
+| -------- | --------------------------------------------------------------- | ------------ |
+| `source` | Source filename (It should be on the root path of your project) | `_redirects` |
+| `base`   | Base path of the build during preBuild step where files exist   | `.`          |
 
 ### Note
 
