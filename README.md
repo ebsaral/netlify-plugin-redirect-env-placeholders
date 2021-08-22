@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/ebsaral/netlify-plugin-redirect-env-placeholders.svg?branch=main)](https://app.travis-ci.com/ebsaral/netlify-plugin-redirect-env-placeholders)
+
 # netlify-plugin-redirect-env-placeholders
 
 This plugin replaces the placeholders defined in `_redirects` file dynamically on preBuild stage.
